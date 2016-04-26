@@ -141,6 +141,11 @@ public class CaseInsensitiveSuite
         Assert.True( list[0] == empty );
         Assert.True( list[1] == alice );
         Assert.True( list[2] == reimu );
+
+
+        // Formatting //
+
+        Assert.AreEqual( "Name is Alice", string.Format( "Name is {0}", alice ));
     }
 
 #if CANNOT_COMPILE
